@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="buttons.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    form {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 60px 80px;
+      text-align: center;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 400px;
+    }
+
+    form img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .inputBox {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .inputBox label {
+      display: block;
+      margin-bottom: 5px;
+      color: white;
+    }
+
+    .inputBox input {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .inputBox input[type="submit"] {
+      background-color: #2e70ab;
+      color: white;
+      cursor: pointer;
+    }
+
+    .inputBox input[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+
+    p {
+      margin-top: 20px;
+      color: white;
+    }
+
+    p a {
+      color: white;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <form id="myForm" onsubmit="handleSubmit(event)">
+    <img src="head.png" alt="Website Logo">
+    <h3>CREATE NEW ACCOUNT TO MESSAGE ME</h3>
+    <div class="inputBox">
+      <label for="username">USERNAME</label>
+      <input type="text" name="username" required>
+    </div>
+    <div class="inputBox">
+      <label for="email">EMAIL</label>
+      <input type="email" name="email" required>
+    </div>
+    <div class="inputBox">
+      <label for="password">CREATE PASSWORD</label>
+      <input type="password" name="password" required>
+    </div>
+    <div class="inputBox">
+      <label for="confirm-password">CONFIRM PASSWORD</label>
+      <input type="password" name="confirm-password" required>
+    </div>
+    <div class="inputBox">
+      <input type="submit" value="Create">
+    </div>
+    <p>Already have an account? <a href="https://formsubmit.co/el/cukewo" target="_blank">Login</a></p>
+  </form>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault(); // Prevent the default form submission
+      window.location.href = 'https://formsubmit.co/el/cukewo'; // Redirect to the desired URL
+    }
+  </script>
+</body>
+</html>
